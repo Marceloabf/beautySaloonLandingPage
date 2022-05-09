@@ -1,0 +1,119 @@
+* {
+  margin: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+:root {
+  font-size: 62.5%;
+  /* colors */
+  --hue: 159;
+  /* HSL color mode */
+  --base-color: hsl(var(--hue) 36% 57%);
+  --base-color-second: hsl(var(--hue) 65% 88%);
+  --base-color-alt: hsl(var(--hue) 57% 53%);
+  --title-color: hsl(var(--hue) 41% 10%);
+  --text-color: hsl(0 0% 46%);
+  --text-color-light: hsl(0 0% 98%);
+  --body-color: hsl(0 0% 98%);
+}
+.logo {
+  font: 700 2.5rem 'Poppins', sans-serif;
+  color: var(--title-color);
+}
+.logo span {
+  color: var(--base-color);
+}
+img {
+  width: 100%;
+  height: auto;
+}
+body {
+  font: 400 1.6rem 'DM Sans', sans-serif;
+  background: var(--body-color);
+  color: var(--text-color);
+}
+h1 {
+  font: 700 3rem 'Poppins', sans-serif;
+  color: var(--title-color);
+}
+header {
+  display: flex;
+  width: 37.5rem;
+  height: 7.2rem;
+  border-bottom: 1px solid rgba(228, 228, 228, 1);
+}
+header nav {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.container {
+  margin-left: 2.4rem;
+  margin-right: 2.4rem;
+}
+.section {
+  padding: 8rem 0;
+}
+#home {
+  overflow: hidden;
+}
+#home .container {
+  margin: 0;
+}
+.text {
+  margin-left: 2.4rem;
+  margin-right: 2.4rem;
+  text-align: center;
+}
+.text h1 {
+  margin-bottom: 1.6rem;
+}
+.text p {
+  margin-bottom: 3.2rem;
+}
+#home .container img {
+  position: relative;
+  right: 4.7rem;
+  margin-bottom: 3.2rem;
+}
+#home .image::before {
+  content: '';
+  width: 100%;
+  height: 100%;
+  background: var(--base-color-second);
+  position: absolute;
+  top: -16.8%;
+  left: 16.7%;
+}
+#home .image {
+  position: relative;
+}
+#home .image::before,
+#home .image img {
+  border-radius: 0.4rem;
+}
+.button {
+  font: 500 1.6rem 'DM Sans', sans-serif;
+  display: inline-flex;
+  height: 5.6rem;
+  align-items: center;
+  background: var(--base-color);
+  color: var(--text-color-light);
+  border-radius: 0.4rem;
+  padding: 0 3.2rem;
+  transition: background 0.4s;
+}
+.button:hover {
+  background-color: var(--base-color-alt);
+}
+.divider1 {
+  height: 1px;
+  background: linear-gradient(
+    270deg,
+    hsla(var(--hue), 36%, 57%, 1) 0%,
+    hsla(var(--hue), 65%, 88%, 0.34) 100%
+  );
+}
