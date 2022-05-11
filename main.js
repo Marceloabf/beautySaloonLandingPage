@@ -51,3 +51,12 @@ scrollReveal.reveal(
 
   { interval: 100 }
 )
+
+//RETURN TO TOP BUTTON
+const button = document.querySelector('.returnButton')
+button.addEventListener('click', () => {
+  window.scrollTo({
+    top: 0,
+    behavior: 'smooth'
+  })
+})

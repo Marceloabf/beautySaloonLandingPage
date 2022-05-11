@@ -377,3 +377,38 @@ nav.show ul.grid {
 #contact ul li i {
   color: var(--base-color);
 }
+
+/*========FOOTER========*/
+footer {
+  background: var(--base-color);
+}
+footer .logo span {
+  color: var(--text-color-light);
+}
+footer .logo {
+  display: inline-block;
+  margin-bottom: 1.5rem;
+}
+footer .brand p {
+  margin-bottom: 0.75rem;
+  color: var(--text-color-light);
+}
+footer i {
+  font-size: 1.5rem;
+  color: var(--text-color-light);
+}
+footer .socialLinks a {
+  margin-right: 2rem;
+}
+
+/*========RETURN BUTTON========*/
+.returnButton {
+  position: fixed;
+  cursor: pointer;
+  bottom: 5rem;
+  right: 2rem;
+  color: var(--text-color-light);
+}
+.returnButton i {
+  font-size: 1.5rem;
+}
