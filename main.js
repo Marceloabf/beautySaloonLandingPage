@@ -54,9 +54,20 @@ scrollReveal.reveal(
 
 //RETURN TO TOP BUTTON
 const button = document.querySelector('.returnButton')
+
 button.addEventListener('click', () => {
   window.scrollTo({
     top: 0,
     behavior: 'smooth'
   })
+})
+
+window.addEventListener('scroll', () => {
+  if (window.scrollY > 560) {
+    button.classList.add('visible')
+  } else button.classList.remove('visible')
+  //Alinhar o botão com os social links do footer quando chegar no mesmo
+  if (window.scrollY > 3600) {
+    button.classList.add('footerPosition')
+  } else button.classList.remove('footerPosition')
 })
