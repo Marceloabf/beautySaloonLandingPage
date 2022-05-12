@@ -344,11 +344,17 @@ nav.show ul.grid {
 }
 /*========TESTIMONIALS SWIPER========*/
 .swiper {
-  max-width: 600px;
-  height: 300px;
+  min-width: 327px;
+  min-height: 302px;
+  max-width: 544px;
+  height: 264px;
 }
 .swiper-slide {
   height: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 1.5rem;
   padding: 4rem 1rem;
 }
 .swiper-pagination-bullet-active {
@@ -432,10 +438,6 @@ footer .socialLinks a:hover {
   visibility: visible;
   transform: translateY(0);
 }
-.returnButton.footerPosition {
-  right: 2rem;
-  bottom: 4.5rem;
-}
 
 /*======SCROLLBAR==== */
 /* width */
@@ -457,4 +459,8 @@ footer .socialLinks a:hover {
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
   background: #555;
+}
+
+/* RESPONSIVO */
+@media (min-width: 992px) {
 }
