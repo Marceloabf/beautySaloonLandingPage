@@ -431,3 +431,25 @@ footer .socialLinks a {
   right: 2rem;
   bottom: 4.5rem;
 }
+
+/*======SCROLLBAR==== */
+/* width */
+::-webkit-scrollbar {
+  width: 5 px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #888;
+  height: 75px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
