@@ -399,6 +399,11 @@ footer i {
 }
 footer .socialLinks a {
   margin-right: 2rem;
+  transition: 0.3s;
+  display: inline-block;
+}
+footer .socialLinks a:hover {
+  transform: translateY(-10px);
 }
 
 /*========RETURN BUTTON========*/
@@ -435,7 +440,7 @@ footer .socialLinks a {
 /*======SCROLLBAR==== */
 /* width */
 ::-webkit-scrollbar {
-  width: 5 px;
+  width: 5px;
 }
 
 /* Track */

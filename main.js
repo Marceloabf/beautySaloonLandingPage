@@ -15,14 +15,13 @@ for (const link of links) {
 }
 
 //Colocar a sombra no header quando a página for scrollada
-const header = document.querySelector('#header')
-const navHeight = header.offsetHeight
-
-window.addEventListener('scroll', () => {
+const putHeaderShadow = () => {
+  const header = document.querySelector('#header')
+  const navHeight = header.offsetHeight
   if (scrollY > navHeight) {
     header.classList.add('scroll')
   } else header.classList.remove('scroll')
-})
+}
 
 //Swiper
 const swiper = new Swiper('.swiper', {
@@ -47,8 +46,9 @@ scrollReveal.reveal(
   #about .image,#about .text,
   #services header, #services .card,
   #testimonials header, #testimonials .testimonials,
-  #contact .text, #contact .links`,
-
+  #contact .text, #contact .links,
+  footer .brand, footer .socialLinks
+  `,
   { interval: 100 }
 )
 
@@ -61,8 +61,8 @@ button.addEventListener('click', () => {
     behavior: 'smooth'
   })
 })
-
-window.addEventListener('scroll', () => {
+//Visibilidade do botão
+const ReturnButtonVisibility = () => {
   if (window.scrollY > 560) {
     button.classList.add('visible')
   } else button.classList.remove('visible')
@@ -70,15 +70,10 @@ window.addEventListener('scroll', () => {
   if (window.scrollY > 3600) {
     button.classList.add('footerPosition')
   } else button.classList.remove('footerPosition')
-})
+}
 
-//teste
-let scrollHeight = Math.max(
-  document.body.scrollHeight,
-  document.documentElement.scrollHeight,
-  document.body.offsetHeight,
-  document.documentElement.offsetHeight,
-  document.body.clientHeight,
-  document.documentElement.clientHeight
-)
-console.log(scrollHeight)
+//Eventos da janela
+window.addEventListener('scroll', () => {
+  putHeaderShadow()
+  ReturnButtonVisibility()
+})
