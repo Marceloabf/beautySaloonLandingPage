@@ -67,7 +67,7 @@ const ReturnButtonVisibility = () => {
     button.classList.add('visible')
   } else button.classList.remove('visible')
   //Alinhar o botão com os social links do footer quando chegar no mesmo
-  if (window.scrollY > 3600) {
+  if (window.scrollY > 3700) {
     button.classList.add('footerPosition')
   } else button.classList.remove('footerPosition')
 }

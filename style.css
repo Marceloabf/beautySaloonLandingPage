@@ -411,7 +411,10 @@ footer .socialLinks a {
 footer .socialLinks a:hover {
   transform: translateY(-10px);
 }
-
+.returnButton.footerPosition {
+  bottom: 4rem;
+  right: 2rem;
+}
 /*========RETURN BUTTON========*/
 .returnButton {
   position: fixed;
